@@ -6,11 +6,15 @@ const autoprefixer = require('gulp-autoprefixer')
 const plumber = require("gulp-plumber");
 const sass = require("gulp-sass")
 const babel = require("gulp-babel")
+const ghPages = require('gulp-gh-pages');
+
 
 const Paths = {
 	scripts: ["public/scripts/li-template.js","public/scripts/fetchUser.js","public/scripts/UserList.js","public/scripts/UX.js"],
 	styles: "public/styles/**/*.scss"
 }
+
+
 
 
 gulp.task("styles",() =>{
@@ -45,3 +49,4 @@ gulp.task("watch", () => {
 	gulp.watch(Paths.styles, ["styles"])
 })
 
+gulp.task("deploy", () => gulp.src("public/dist/*").pipe(ghPages()));

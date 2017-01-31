@@ -1,7 +1,8 @@
 const DefaultUserList = [
-	'medrybw', "billy", "freecodecamp", "nightblue3", "syndicate", 
+	'medrybw', "realmaddox", "freecodecamp", "nightblue3", "syndicate", 
    	"riotgames", "RobotCaleb", "imaqtpie", "esl_csgo", "sodapoppin",
    	"Edward Sn0wden"];
+
 
 $(document).ready(() => {
 	
@@ -34,6 +35,7 @@ $(document).ready(() => {
 		}
 
 	})//Tab selected
+	
 	
 	$("form.form-inline").on("input", function(e){
 		var query = new RegExp(e.target.value.trim(), "gi");
