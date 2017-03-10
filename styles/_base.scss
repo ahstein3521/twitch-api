@@ -1,24 +1,25 @@
-@import "./variables";
-
 html {
   position: relative;
   min-height: 100%;
 }
 body {
   width: 100%;
-  margin-bottom:$footer-height;
+  margin:0;
+  padding:0;
+  margin-bottom:$footer+40;
   background: $purple;
 }
+
 
 footer{
   position: absolute;
   bottom: 0;
   text-align: center;
-  height:$footer-height;
+  height:$footer;
   width: 100%;
   background: $grey;
 
-  p{
-    margin: 0;
-  }
+  p{ margin:0}
 }
+
+

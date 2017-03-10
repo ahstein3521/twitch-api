@@ -1,0 +1,23 @@
+.nav-tabs{
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+} 
+
+.tab, .tab-active{
+  flex-grow: 1;
+  list-style: none;
+  padding:5px;
+  border-right:1px solid $purple;
+  border-bottom:none;
+  background:#c5c4c4;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+.tab-active{
+  cursor: default;
+  background:lighten($blackish_blue, 10%);
+  color:$orange;
+}   
+

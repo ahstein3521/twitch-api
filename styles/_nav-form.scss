@@ -1,0 +1,23 @@
+.form-inline{
+	padding:15px;
+	background:lighten($blackish_blue,30%);
+	flex-grow:3;
+}
+#search-bar{
+	margin-left:15px;
+	width:90%;
+	height:25px;
+	border:1px solid $blackish_blue;
+	box-shadow:none;
+	transition:box-shadow 0.3s;
+	box-sizing:border-box;
+	border-radius:5px;
+	text-indent:20px;
+	font-size:1.3em;
+	padding:5px;
+
+	&:focus{
+		outline: none;
+		box-shadow: 0 0 2px 1px lighten(complement($blackish_blue),20%);
+	}
+}

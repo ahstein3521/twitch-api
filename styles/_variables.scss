@@ -1,0 +1,30 @@
+$light_blue: #86ffed;
+$light_red:#ff7878;
+$blackish_blue:#1c463e;
+$orange: #ffdf61;
+$purple:rgb(53, 33, 53);
+$grey:rgb(197, 196, 196);
+
+$footer:50px;
+
+@mixin statusLabel($color,$content){
+	&:before{
+	    position: absolute;
+	    top:20%;
+	    right:5px;
+	    color:$color;
+	    margin-right:3px;
+	    content:$content;
+	    font-size:10px;
+	}
+	&:after{
+	    position: absolute;
+	    top:40%;
+	    right:10px;
+	    color:$color;
+	    margin-right:3px;
+	    font-family: 'FontAwesome';
+	    content:'\f111';
+	    font-size:15px;		
+	}
+}

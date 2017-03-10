@@ -1,0 +1,25 @@
+nav{
+  background: #610f0f;
+  margin:0;
+  color: #91b1ac;
+  text-shadow: 2px 1px 3px black;
+  // box-shadow: 5px 0 20px black;
+  padding:15px;
+
+  @media screen and (max-width: 780px){
+    padding: 10px;
+
+    .nav-header{
+      width:100%;
+    }
+  }
+}
+.nav-brand{
+    font-family: monospace;
+    font-size: 1.6em;
+  
+  @media screen and (max-width: 500px){
+  	text-align: center; 
+    font-size: 1.3em;	
+  }
+}
